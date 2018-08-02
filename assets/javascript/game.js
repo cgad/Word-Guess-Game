@@ -11,8 +11,9 @@ console.log(randomWord);
 
 function blankWordSetUp() {
     for (var i = 0; i < randomWord.length; i++) {
-        blankWord.push("_ ");
+        currentWord = blankWord.push("_ ");
     }
+    // document.getElementById("currentWord").textContent = currentWord;
 }
 
 blankWordSetUp();
@@ -34,19 +35,20 @@ document.onkeyup = function(event) {
     guessesLeft--;
     lettersGuessed.push(userGuess);
 
+    if (guessesLeft == 0) {
+        losses++;
+        guessesLeft = 12;
+        lettersGuessed = [];
+    }
+
     console.log("letters guessed: " + lettersGuessed);
     console.log("guesses left: " + guessesLeft);
     console.log("losses: " + losses);
+    console.log(blankWord);
 
-    // for (var j = 0; j < lettersGuessed.length; j++) {
-    //     if (userGuess != lettersGuessed[j]) {
-    //         lettersGuessed.push(userGuess);
-    //         console.log("letters guessed: " + lettersGuessed);
-    //     }
-    // }
+    document.getElementById("wins").textContent = wins;
+    document.getElementById("losses").textContent = losses;
+    document.getElementById("guessesLeft").textContent = guessesLeft;
+    document.getElementById("lettersGuessed").textContent = lettersGuessed;
 }
 
-    // document.getElementById("wins").textContent = wins;
-    // document.getElementById("losses").textContent = losses;
-    // document.getElementById("guessesLeft").textContent = guessesLeft;
-    // document.getElementById("lettersGuessed").textContent = lettersGuessed;
