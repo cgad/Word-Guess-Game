@@ -1,26 +1,29 @@
 <!DOCTYPE html>
-<html lang="en-us">
-
+<html lang="en">
+    
 <head>
-    <meta charset="UTF-8"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Hangman</title>
 </head>
 
 <body>
-    <script src="assets/javascript/game.js"></script>
-
     <h1>Hangman</h1>
 
     <h3>Press any key to get started!</h3>
 
-    <h4>Current word <span id="currentWord"></span></h4>
+    <h4>Current word <div id="currentWord"></div></h4>
 
     <p>Guesses left: <span id="guessesLeft"></span></p>
     <p>Letters already guessed: <span id="lettersGuessed"></span></p>
 
-    <h4>Wins: <span id="wins"></span></h4>
-    <h4>Losses: <span id="losses"></span></h4>
-    
+    <h4>Wins: <span id="wins">0</span></h4>
+    <h4>Losses: <span id="losses">0</span></h4>
+
+    <script src="assets/javascript/game.js"></script>
 </body>
 
 </html>
+
+

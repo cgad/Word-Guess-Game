@@ -12,14 +12,15 @@ console.log(randomWord);
 
 // GAME SETUP
 // uses the random word to fill blankWord array with blank spaces
-function blankWordSetUp() {
+function setUp() {
     for (var i = 0; i < randomWord.length; i++) {
         blankWord.push("_ ");
     }
-    console.log(blankWord);
     document.getElementById("currentWord").textContent = blankWord;
+
+    // loop through blankWord and print each _ to screen
 }
-blankWordSetUp();
+setUp();
 
 
 // GAME START
@@ -28,7 +29,7 @@ document.onkeyup = function(event) {
     var userGuess = event.key.toLowerCase();
 
     // if the user's guess is unique
-    if (lettersGuessed.indexOf(userGuess) == -1) {
+    // if (lettersGuessed.indexOf(userGuess) == -1) {
 
         // determines if the letter guessed is in the random word
         // if yes, replaces corresponding blank space in blankWord with the guessed letter
@@ -62,5 +63,5 @@ document.onkeyup = function(event) {
         document.getElementById("guessesLeft").textContent = guessesLeft;
         document.getElementById("lettersGuessed").textContent = lettersGuessed;
 
-    }
+    // }
 }
