@@ -5,21 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Hangman</title>
+    <title>Word Guess Game</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
 </head>
 
 <body>
-    <h1>Hangman</h1>
 
-    <h3>Press any key to get started!</h3>
+    <h1>Guess My Fruit</h1>
 
-    <h4>Current word <div id="currentWord"></div></h4>
+    <div class="container">
+        <h3 id="intro">Press a letter key to make a guess!</h3>
 
-    <p>Guesses left: <span id="guessesLeft">12</span></p>
-    <p>Letters already guessed: <span id="lettersGuessed"></span></p>
+        <!-- <h4>&darr; Guess this fruit &darr;<div id="currentWord"></div></h4> -->
+        <h4>&darr; This fruit is <span id="currentWordLength"></span> letters long &darr;<div id="currentWord"></div></h4>
 
-    <p>Wins: <span id="wins">0</span></p>
-    <p>Losses: <span id="losses">0</span></p>
+        <p>Guesses left: <span id="guessesLeft">12</span></p>
+        <p>Your guesses so far: <span id="lettersGuessed"></span></p>
+        <p>Wins: <span id="wins">0</span></p>
+        <p>Losses: <span id="losses">0</span></p>
+    </div>
 
     <script src="assets/javascript/game.js"></script>
 </body>
