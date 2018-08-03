@@ -1,13 +1,10 @@
 # Word-Guess-Game
 Homework 3, recommended
 
-PSEUDOCODE
+INSTRUCTIONS
 
-1. press any key to get started
-2. generate random word choice from array
-3. set user letter guess
-4. determine if user letter guess is contained in random word choice
-5.      if yes, push that letter to proper position in blank array
-6.      if word choice array is full, wins++
-7.      if no, guesses left-- & push to letters already guessed
-8. if guesses left = 0, losses++, letters already guessed cleared, new random word choice generated
+- guess what the fruit is one letter at a time by pressing the desired letter key
+- you have 12 tries to complete the word
+- see your guesses so far and scores tracked on the page
+- if you guess right, you win and game restarts
+- if you run out of guesses, you lose and game restarts
