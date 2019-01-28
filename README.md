@@ -1,7 +1,6 @@
 # Word-Guess-Game
-Homework 3, recommended
 
-INSTRUCTIONS
+## Instructions
 
 - guess what the fruit is one letter at a time by pressing the desired letter key
 - you have 12 tries to complete the word
